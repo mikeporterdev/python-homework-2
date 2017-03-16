@@ -24,6 +24,7 @@ I will check everyones answers on the 30th or when everyone says they're done, w
 # Write a function here that will add up all the numbers into a list and return the total.
 # ie. [4, 7, 12, 16] returns 39
 def sum_all_in_list(list):
+
     pass
 
 
