@@ -11,13 +11,6 @@ class TestSumAllInList(TestCase):
         sum = Homework2.sum_all_in_list([-1, 0, -4])
         self.assertEqual(sum, -5, "Your sum method can't handle negative numbers")
 
-    def test_reverse_list_of_Text(self):
-        reverse = Homework2.reverse_list_of_text(["hi", "there"])
-        self.assertEqual(reverse, "erehtih", "Your reverse method isn't returning what I expected")
-
-        reverse = Homework2.reverse_list_of_text(["wOwZaS!"])
-        self.assertEqual(reverse, "!SaZwOw", "Your reverse method can't seem to handle capitalization")
-
     def test_merge_two_lists(self):
         merge = Homework2.merge_two_lists([[4, 2, 6], [2, 6, 8], [21, 2, 4]])
         self.assertEqual(merge, [4, 2, 6, 2, 6, 8, 21, 2, 4], "Your merge method isn't returning what I expected")
@@ -36,14 +29,14 @@ class TestSumAllInList(TestCase):
         self.assertEqual(smallest, -7, "Your smallest number method acts weirdly when the list has negatives in")
 
     def test_remove_even_numbers(self):
-        removed = Homework2.remove_even_numbers([2, 3, 4])
+        removed = Homework2.return_odd_numbers([2, 3, 4])
         self.assertEqual(removed, [3], "Your remove even numbers method isn't returning what I expected")
 
-        removed = Homework2.remove_even_numbers([4, 2, 6])
+        removed = Homework2.return_odd_numbers([4, 2, 6])
         self.assertEqual(removed, [], "Your remove even numbers method doesn't work when only even numbers are passed in")
 
-        removed = Homework2.remove_even_numbers([1, 3, 5])
-        self.assertEqual(removed, [], "Your remove even numbers method doesn't work when only odd numbers are passed in")
+        removed = Homework2.return_odd_numbers([1, 3, 5])
+        self.assertEqual(removed, [1, 3, 5], "Your remove even numbers method doesn't work when only odd numbers are passed in")
 
     def test_append_to_all_elements(self):
         appended = Homework2.append_to_all_elements(["hey", "there", "friend"], "test")

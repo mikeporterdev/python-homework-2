@@ -27,13 +27,6 @@ def sum_all_in_list(list):
     pass
 
 
-# Write a function here that will loop through a list and return all the strings in it added together and reversed
-# ie. Passing in ["Hi", "There", "My", "Name", "Is", "Mike"] returns "ekiMsIemaNyMerehTiH" all as one string
-# (Might need to look up the function on how to reverse a string for this one)
-def reverse_list_of_text(list):
-    pass
-
-
 # Write a function that will merge a list of lists together. ie. [[4, 2, 6], [2, 4, 7], [9, 2, 6]]
 # becomes one list of [4, 2, 6, 2, 4, 7, 9, 2, 6]
 def merge_two_lists(list):
@@ -51,7 +44,7 @@ def get_smallest_number_in_list(list):
 # Don't try and remove numbers from a list you're currently looping through
 # ie. [2, 5, 8, 2, 3, 7] becomes [5, 3, 7]
 # If there are no odd numbers in the whole list, return an empty list
-def remove_even_numbers(list):
+def return_odd_numbers(list):
     pass
 
 
